@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block conten %}
+<div class="col-sm-10">
+    <h3 class=" my-5 display-4" style="color:red;">Contact Page</h3>
+
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"> Address</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Address"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Massage</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Massege"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+    
+</div>
+
+{% endblock conten %}

@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block conten %}
+<div class="col-sm-10">
+<h3 class=" my-5">Dashbord/Add Post</h3>
+<!-- showing massege -->
+{% if messages %}
+    {% for m in messages %}
+    <p {% if m.tags %} class="alert alert-{{m.tags}} mb-5" {% endif %}>{{m}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </p>
+    {% endfor %}
+    {% endif %}
+    
+<form action="" method="POST" novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success" value="Add">
+   <a href="{% url 'dashbord' %}" class="btn btn-danger">Back to Home</a>
+</form>
+</div>
+{% endblock conten %}

@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(255 255 255);
+    color: #fdfdfd
+}
+form{
+    color: rgb(177, 166, 168);
+}
+.form-control{
+    background-color: rgb(177, 166, 168);
+}
+
+.titlecol{
+    color: rgb(5, 106, 173);
+}
+.jumbolor{
+    background-color: #f1ecec66;
+}
+.texcol{
+    color: #b30059;
+}
